@@ -1,27 +1,27 @@
 1. Install Homebrew  -- http://brew.sh/
 2. Install pip -- `sudo easy_install pip`
 3. Install virtualenv -- `pip install virtualenv`
-4. Checkout the repo -- `git clone https://github.com/bm1362/selfservice-updated.git`]
+4. Checkout the repo -- `git clone https://github.com/bm1362/selfservice-updated.git`
 5. cd into the repo -- `cd selfservice-updated`
 6. Create a virtualenv -- `virtualenv venv`
 7. Source the new virtualenv -- `source venv/bin/activate`
 8. Install python dependencies into the new virtualenv -- `pip install -r requirements.txt`
 9. Create a config directory under app/ and add config.cfg and ldap.cfg
      ```
-       mkdir app/config
+       mkdir app/config 
        
        touch app/config/config.cfg
        
-       touch app/config/ldap.cfg
+       touch app/config/ldap.cfg 
      ```
 10. Setup config files
    > You should copy these from an existing installation, they contain passwords etc for ldap (see sample config below if you need to write from scratch)
 
 11. Start local instance
-   > python manage.py runserver
-   >
-   > Running on http://127.0.0.1:5000/
-
+     ```
+     python manage.py runserver
+     > Running on http://127.0.0.1:5000/
+     ```
 References:
 
 * Homebrew: http://brew.sh/
